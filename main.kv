@@ -1,0 +1,34 @@
+BoxLayout:
+    orientation: 'vertical'
+    padding: 10
+
+    Label:
+        text: 'Add Transaction'
+
+    TextInput:
+        id: client_name
+        hint_text: 'Client Name'
+    
+    TextInput:
+        id: amount
+        hint_text: 'Amount'
+        input_filter: 'float'
+
+    TextInput:
+        id: date
+        hint_text: 'Date (YYYY-MM-DD)'
+    
+    Button:
+        text: 'Add Transaction'
+        on_press: app.add_transaction_from_ui(client_name.text, amount.text, date.text)
+
+    Label:
+        text: 'Reports'
+
+    Button:
+        text: 'Show Report'
+        on_press: app.show_report_from_ui()
+
+    Button:
+        text: 'Backup Data'
+        on_press: app.backup_data_from_ui()
