@@ -4,7 +4,7 @@ import json
 import matplotlib.pyplot as plt
 from kivymd.app import MDApp
 from kivy.lang import Builder
-
+from backup_manager import restore_data, save_data
 # إعداد قاعدة البيانات SQLite
 def create_db():
     conn = sqlite3.connect('debtbook.db')
