@@ -1,5 +1,1 @@
-plyer
-json
-matplotlib.pyplot
-kivymd.app
-kivy.lang
+
