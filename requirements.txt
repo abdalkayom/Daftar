@@ -1,0 +1,6 @@
+plyer
+sqlite3
+json
+matplotlib.pyplot
+kivymd.app
+kivy.lang
